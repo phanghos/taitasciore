@@ -15,6 +15,7 @@ const headerPadding = 150;
 const IndexPage = () => {
   useEffect(() => {
     document.body.style.margin = 0;
+    document.title = 'taitasciore';
   }, []);
 
   return (
@@ -46,7 +47,7 @@ const IndexPage = () => {
               display: 'flex',
               flexDirection: 'column',
               alignSelf: 'center',
-              width: window.innerWidth / 2.5,
+              width: '50%',
             }}
           >
             <h1 style={{ marginBottom: 0, marginTop: 0 }}>
