@@ -1,6 +1,7 @@
 import { useStaticQuery, graphql } from 'gatsby';
+import { Post } from '../models/Post';
 
-export const useMediumPosts = () => {
+export const useMediumPosts = (): Post[] => {
   const data = useStaticQuery(graphql`
     query {
       allMediumFeed {
@@ -8,10 +9,11 @@ export const useMediumPosts = () => {
           author
           link
           title
+          date
         }
       }
     }
   `);
 
-  return data.allMediumFeed.nodes;
+  return data?.allMediumFeed?.nodes || [];
 };
