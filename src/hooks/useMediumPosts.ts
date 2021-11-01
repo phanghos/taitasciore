@@ -9,6 +9,7 @@ export const useMediumPosts = (): Post[] => {
           author
           link
           title
+          date
         }
       }
     }

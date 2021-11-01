@@ -2,17 +2,23 @@ import React from 'react';
 import { Link } from 'gatsby';
 import profileImage from '../../images/profile.jpg';
 import styles from './styles';
+import './styles.css';
 
 export const MainHeader = () => (
   <div style={styles.container}>
     <Link to="/" style={styles.link}>
-      <img src={profileImage} alt="profile-image" style={styles.profileImage} />
+      <img
+        src={profileImage}
+        alt="profile-image"
+        id="avatar"
+        style={styles.profileImage}
+      />
     </Link>
     <div>
       <Link to="/" style={styles.name}>
-        <h1 style={{ marginTop: 0 }}>Roberto Tatasciore</h1>
+        <h1 id="name">Roberto Tatasciore</h1>
       </Link>
-      <div style={styles.linkContainer}>
+      <div id="links">
         <Link to="/blog" style={styles.link}>
           Blog
         </Link>

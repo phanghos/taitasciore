@@ -1,8 +1,7 @@
-import { linkColor, primaryColor } from 'consts';
+import { linkColor } from 'consts';
 
 export default {
-  link: { color: primaryColor, textDecoration: 'none', letterSpacing: 1 },
+  link: { color: '#000', textDecoration: 'none', letterSpacing: 1 },
   title: { marginBottom: 16 },
-  authorBy: { fontStyle: 'italic' },
-  author: { color: linkColor, fontWeight: 'bold' },
+  author: { color: linkColor },
 };

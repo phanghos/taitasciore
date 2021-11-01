@@ -1,0 +1,15 @@
+#avatar {
+  width: 5vw;
+  height: 5vw;
+  border-radius: 5vw;
+  margin-right: 2vw;
+}
+
+#name {
+  font-size: 2vw;
+  margin-top: 0;
+}
+
+#links {
+  font-size: 1vw;
+}
